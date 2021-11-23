@@ -1,0 +1,130 @@
+.title {
+  font-size: 24px;
+  text-transform: uppercase;
+  font-weight: 700;
+  text-align: center;
+  color: #fff;
+}
+.delete_button{
+	cursor: pointer;
+	background-color: red;
+	border-radius: 5px;
+	padding: 5px;
+}
+.delete_button_active{
+    cursor: pointer;
+    background-color: rgba(255, 0, 0, 0.4);
+    border-radius: 5px;
+    padding: 5px;
+}
+		.container {
+            width: 90%;
+            margin: auto;
+            font-size: 20px;
+        }
+
+            .container h3 {
+                font-size: 20px;
+            }
+
+        #content {
+            border: dashed 2px #ddd;
+            padding: 10px;
+            background-color: #FFF;
+            -webkit-border-top-left-radius: 10px;
+  -moz-border-radius-topleft: 10px;
+  border-top-left-radius: 10px;
+  -webkit-border-top-right-radius: 10px;
+  -moz-border-radius-topright: 10px;
+  border-top-right-radius: 10px;
+        }
+        .card-heading {
+  padding: 1px 0;
+  color: white;
+  text-align: center;
+  background: #1684b3;
+  -webkit-border-top-left-radius: 10px;
+  -moz-border-radius-topleft: 10px;
+  border-top-left-radius: 10px;
+  -webkit-border-top-right-radius: 10px;
+  -moz-border-radius-topright: 10px;
+  border-top-right-radius: 10px;
+}
+            #content p {
+                color: blue;
+                margin: 5px;
+                padding: 5px;
+            }
+
+            #content > p {
+                margin: 5px;
+            }
+
+            #content #table tr, #content #table1 tr {
+                background-color: #eee;
+            }
+            #content #table1{
+                width: 100%;
+                margin-top: 30px;
+            }
+             #content #table tr th, #content #table1 tr th, #content #table tr td, #content #table1 tr td{
+                border: 1px solid black;
+  				border-collapse: collapse;
+            }
+            .dataTables_paginate .paginate_button {
+            	background-color: #eee;
+            	padding: 1px 4px !important;
+            	margin: 4px !important;
+            }
+            .dataTables_paginate span .current {
+            	background-color: #1684b3 !important;
+            }
+            .dataTables_wrapper .c, .dataTables_wrapper .dataTables_filter{
+            	padding:  30px 20px;
+            }
+/* ==========================================================================
+   #Success and error Messages
+   ========================================================================== */
+
+#success-msg{
+  visibility: hidden;
+  min-width: 250px;
+  margin-left: -125px;
+  background: rgba(80,230,80,0.8);
+  color: #fff;
+  text-align: center;
+  border-radius: 2px;
+  padding: 16px;
+  position: fixed;
+  z-index: 1;
+  left: 50%;
+  bottom: 30px;
+  font-size: 17px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+#success-msg.show {
+  visibility: visible;
+  -webkit-animation: fadein 0.5s, fadeout;
+  animation: fadein 0.5s, fadeout;
+}
+#error-msg{
+  visibility: hidden;
+  min-width: 250px;
+  margin-left: -125px;
+  background: #c13d41;
+  color: #fff;
+  text-align: center;
+  border-radius: 2px;
+  padding: 16px;
+  position: fixed;
+  z-index: 1;
+  left: 50%;
+  bottom: 30px;
+  font-size: 17px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+#error-msg.show {
+  visibility: visible;
+  -webkit-animation: fadein 0.5s, fadeout;
+  animation: fadein 0.5s, fadeout;
+}

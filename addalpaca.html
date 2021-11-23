@@ -1,0 +1,77 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Add Alpaca</title>
+    <link href="css/addforms.css" rel="stylesheet">
+</head>
+<body>
+<div class="page-wrapper bg-gra-03 p-t-45 p-b-50">
+        <div class="wrapper wrapper--w790">
+            <div class="card card-5">
+                <div class="card-heading">
+                    <h2 class="title">Add alpaca</h2>
+                </div>
+                <div class="card-body">
+                    <!-- Add Alpaca Form Start-->
+                    <form id="add_alpaca" method="POST" action="#" name="add_alpaca">
+                        <!-- Name input field-->
+                        <div class="form-row">
+                            <div class="name">Name</div>
+                            <div class="value">
+                                <div class="input-group">
+                                    <input class="input--style-5" type="text" id="name" name="name">
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Weight input field-->
+                        <div class="form-row">
+                            <div class="name">Weight</div>
+                            <div class="value">
+                                <div class="input-group">
+                                    <input class="input--style-5" type="number" id="weight" name="weight" step="0.01">
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Color input field-->
+                        <div class="form-row">
+                            <div class="name">Color</div>
+                            <div class="value">
+                                <div class="input-group">
+                                    <input type="Color" id="color" name="color">
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Farm input field-->
+                        <div class="form-row">
+                            <div class="name">Farm</div>
+                            <div class="value">
+                                <div class="input-group">
+                                    <div class="rs-select2 js-select-simple select--no-search">
+                                        <select class="input--style-6" name="farmId" id="farmId">
+                                            <option disabled="disabled" selected="selected">Choose option</option>
+                                        </select>
+                                        <div class="select-dropdown"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Save button-->
+                        <div>
+                            <button class="btn btn--radius-2 btn--red" type="submit">Save</button>
+                        </div>
+                    </form>
+                    <!-- Add Alpaca Form End-->
+                </div>
+            </div>
+        </div>
+    </div>
+    <span id="success-msg" class="success-msg"></span>
+                <span id="error-msg" class="error-msg"></span>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.js"></script>
+    <script src="js/addform.js"></script>
+
+</body>
+</html>

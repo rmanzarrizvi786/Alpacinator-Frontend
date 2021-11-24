@@ -1,4 +1,6 @@
  $(document).ready(function () {
+ 	var totalAlpaca=0;
+        	var totalCost=0; 
         	var tempAlpaca=[]; 
         	//get alpaca list  
         	$.ajax({
@@ -51,7 +53,7 @@
 			    }else{
 					var id=$(this).val(); //get delete button value
 					$(this).closest("tr").remove();
-					$.ajax({
+					$.ajax({1
 				    url: "https://alpacinator.herokuapp.com/farm/delete/"+id,
 				    type: 'DELETE',
 				    accept: "application/json",

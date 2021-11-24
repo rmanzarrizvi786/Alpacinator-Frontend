@@ -1,5 +1,5 @@
 $(document).ready(function () {
-        	var tempAlpaca=[];
+        	var sumAlpaca=[];
         	var totalAlpaca=0;
         	var totalCost=0; 
         	//get alpaca list 
@@ -13,9 +13,9 @@ $(document).ready(function () {
 				    "x-access-token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjowLjYwNzAxNTI5NTk1MTMxODksImlhdCI6MTYzNzU2ODAwOCwiZXhwIjoxNjM4MDAwMDA4fQ.5WbQkmJlANu1q8g9ih09tMlsZVgnAmXl1qHvc33ZcGw"
 				  },
 			  	success: function (data, textStatus, xhr) {
-			  	   //insert alpaca_farm_id and shipping_cost in tempAlpaca array 
+			  	   //insert alpaca_farm_id and shipping_cost in sumAlpaca array 
 			       for (var i = 0; i < data.length; i++) {
-			       	 tempAlpaca[i]=[data[i].alpaca_farm_id,data[i].shipping_cost];
+			       	 sumAlpaca[i]=[data[i].alpaca_farm_id,data[i].shipping_cost];
 			       }
 			  	},
 				error: function (xhr, status, error) {
@@ -35,7 +35,7 @@ $(document).ready(function () {
 			    success: function (data, textStatus, xhr) {
 			     //add summary table 1 rows
 			     for (var i = 0; i < data.length; i++) {
-			     	$('#table tr:last').after('<tr><td >'+data[i].name+'</td><td >'+countAlpacas(tempAlpaca, data[i].id)+'</td><td >'+countCost(tempAlpaca, data[i].id)+'</td></tr>');
+			     	$('#table tr:last').after('<tr><td >'+data[i].name+'</td><td >'+countAlpacas(sumAlpaca, data[i].id)+'</td><td >'+countCost(sumAlpaca, data[i].id)+'</td></tr>');
 			     	
 			     }
 			    

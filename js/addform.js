@@ -12,7 +12,8 @@ $.ajax({
      
      for (var i = 0; i < data.length; i++) {
       $("#farmId").append(new Option(data[i].name, data[i].id));
-     }     
+     }
+     
     },
 
     error: function (xhr, status, error) {

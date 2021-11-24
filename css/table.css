@@ -60,14 +60,14 @@
                 margin: 5px;
             }
 
-            #content #table tr, #content #table1 tr {
+            #content #table tr, #content #table1 tr, #content #table2 tr {
                 background-color: #eee;
             }
-            #content #table1{
+            #content #table1, #content #table2{
                 width: 100%;
                 margin-top: 30px;
             }
-             #content #table tr th, #content #table1 tr th, #content #table tr td, #content #table1 tr td{
+             #content #table tr th, #content #table1 tr th,#content #table2 tr th, #content #table tr td, #content #table1 tr td,  #content #table2 tr td{
                 border: 1px solid black;
   				border-collapse: collapse;
             }

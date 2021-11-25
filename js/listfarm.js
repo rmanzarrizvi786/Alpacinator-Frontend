@@ -53,7 +53,7 @@
 			    }else{
 					var id=$(this).val(); //get delete button value
 					$(this).closest("tr").remove();
-					$.ajax({1
+					$.ajax({
 				    url: "https://alpacinator.herokuapp.com/farm/delete/"+id,
 				    type: 'DELETE',
 				    accept: "application/json",

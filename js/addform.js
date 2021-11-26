@@ -103,12 +103,10 @@ $.ajax({
     },
 
     error: function (xhr, status, error) {
-      $('#success-msg').html(error);
+      $('#error-msg').html(error);
       var x = document.getElementById("error-msg");
       x.className = "show";
       setTimeout(function(){ x.className = x.className.replace("show", ""); }, 5000);
-      $('#name').val("");
-      $('#multiplier').val("");
     }
   });
 }
@@ -143,69 +141,11 @@ function addAlpaca(name, weight, color, farmId) {
     },
 
     error: function (xhr, status, error) {
-      $('#success-msg').html(error);
+      $('#error-msg').html(error);
       var x = document.getElementById("error-msg");
       x.className = "show";
       setTimeout(function(){ x.className = x.className.replace("show", ""); }, 5000);
-      $('#name').val("");
-      $('#weight').val("");
-      $('#color').val("");
-      $('#farmId').val("");
     }
   });
 }
-
-
-  $('form[id="add_alpaca11"]').validate({
-    rules: {
-      name: 'required',
-      weight: 'required',
-      color: 'required',
-      /*user_email: {
-        required: true,
-        email: true,
-      },
-      psword: {
-        required: true,
-        minlength: 8,
-      }*/
-    },
-    messages: {
-      name: 'Name is required',
-      weight: 'Weight is required',
-      color: 'Color is required',
-      /*psword: {
-        minlength: 'Password must be at least 8 characters long'
-      }*/
-    },
-    submitHandler: function(form) {
-      form.submit();
-    }
-
-  });
-  $('form[id="add_farm111"]').validate({
-    rules: {
-      name: 'required',
-      multiplier: 'required',
-      /*user_email: {
-        required: true,
-        email: true,
-      },
-      psword: {
-        required: true,
-        minlength: 8,
-      }*/
-    },
-    messages: {
-      name: 'Name is required',
-      multiplier: 'Multiplier is required',
-      /*psword: {
-        minlength: 'Password must be at least 8 characters long'
-      }*/
-    },
-    submitHandler: function(form) {
-      form.submit();
-    }
-  });
 });
-
